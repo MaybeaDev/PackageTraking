@@ -1,0 +1,58 @@
+{
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/rastrear",
+        "destination": "/rastrear.html"
+      },{
+        "source": "/seccion_empresas/cargar_pedidos",
+        "destination": "/seccion_empresas/cargar_pedidos.html"
+      },{
+        "source": "/seccion_empresas/configuraciones",
+        "destination": "/seccion_empresas/configuraciones.html"
+      },{
+        "source": "/seccion_empresas/ordenes",
+        "destination": "/seccion_empresas/ordenes.html"
+      },{
+        "source": "/seccion_empresas/panel_de_control",
+        "destination": "/seccion_empresas/panel_de_control.html"
+      },
+      {
+        "source": "/",
+        "destination": "/index.html"
+      },
+      {
+        "source": "**",
+        "destination": "/not_found.html"
+      }
+    ]
+  },
+  "emulators": {
+    "auth": {
+      "port": 9099
+    },
+    "functions": {
+      "port": 5001
+    },
+    "firestore": {
+      "port": 8080
+    },
+    "hosting": {
+      "port": 5000
+    },
+    "ui": {
+      "enabled": true
+    },
+    "singleProjectMode": true
+  }
+}

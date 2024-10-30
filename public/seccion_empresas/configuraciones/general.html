@@ -1,0 +1,142 @@
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <button class="nav-link active" aria-current="page">General</button>
+  </li>
+  <li class="nav-item">
+    <button class="nav-link" onclick="loadSection('configuraciones/ciclo_de_vida.html')">Ciclo de vida</button>
+  </li>
+</ul>
+
+<div class="container mt-4">
+  <div class="card">
+    <form>
+      <div class="card-body">
+        <h5 class="card-title mb-4">Correo y contacto</h5>
+        <div class="row">
+          <div class="col-md-3">
+            <label for="nombreCuenta" class="form-label">Nombre del usuario:</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" class="form-control" id="nombreUsuario" placeholder="Nombre del Usuario" disabled>
+          </div>
+
+          <div class="col-md-2">
+            <label for="emailCuenta" class="form-label">Correo Electrónico:</label>
+          </div>
+          <div class="col-md-4">
+            <input type="email" class="form-control" id="emailCuenta" placeholder="tuemail@ejemplo.com">
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-md-3">
+            <label for="nombreEmpresa" class="form-label">Nombre de la Empresa:</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" class="form-control" id="nombreEmpresa" placeholder="Nombre de la Empresa" disabled>
+          </div>
+
+          <div class="col-md-2">
+            <label for="telefonoCuenta" class="form-label">Teléfono:</label>
+          </div>
+          <div class="col-md-4">
+            <input type="tel" class="form-control" id="telefonoCuenta" placeholder="123456789">
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-md-2">
+            <label for="emailContacto" class="form-label">Correo para Clientes:</label>
+          </div>
+          <div class="col-md-4">
+            <input type="email" class="form-control" id="emailContacto" placeholder="contacto@empresa.com">
+          </div>
+
+          <div class="col-md-3">
+            <label for="telefonoContacto" class="form-label">Teléfono para Clientes:</label>
+          </div>
+          <div class="col-md-3">
+            <input type="tel" class="form-control" id="telefonoContacto" placeholder="123456789">
+          </div>
+        </div>
+        
+        <!-- Botón de guardar -->
+        <button type="submit" class="btn btn-primary mt-4">Guardar Cambios</button>
+
+      </div>
+    </form>
+  </div>
+  <br>
+
+  <!-- Sección Seguridad -->
+  <div class="card">
+    <form>
+      <div class="card-body">
+        <h5 class="card-title mb-4">Seguridad</h5>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-6">
+                <label for="contraseñaActual" class="form-label">Contraseña Actual</label>
+              </div>
+
+              <div class="col-md-6">
+                <input type="password" class="form-control" id="contraseñaActual">
+              </div>
+            </div>
+
+            <div class="row mt-2">
+              <div class="col-md-6">
+                <label for="nuevaContraseña" class="form-label">Nueva Contraseña</label>
+              </div>
+
+              <div class="col-md-6">
+
+                <input type="password" class="form-control" id="nuevaContraseña">
+              </div>
+            </div>
+
+            <div class="row mt-2">
+              <div class="col-md-6">
+                <label for="nuevaContraseña" class="form-label">Repetir Contraseña</label>
+              </div>
+
+              <div class="col-md-6">
+                <input type="password" class="form-control" id="repetirContraseña">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mt-5">
+            <label> Una contraseña segura tiene al menos una letra mayuscula, una letra minuscula, un número, y un
+              caracter especial (@#$%&...)</label>
+          </div>
+        </div>
+        
+        <!-- Botón de guardar -->
+        <button type="submit" class="btn btn-primary mt-4">Guardar Cambios</button>
+      </div>
+    </form>
+  </div>
+  <br>
+
+  <!-- Sección Horario de Atención -->
+  <div class="card">
+    <form>
+      <div class="card-body">
+        <h5 class="card-title mb-4">Horario de Atención</h5>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="horarioInicio" class="form-label">Hora de Inicio</label>
+            <input type="time" class="form-control" id="horarioInicio" value="09:00">
+          </div>
+          <div class="col-md-6">
+            <label for="horarioFin" class="form-label">Hora de Cierre</label>
+            <input type="time" class="form-control" id="horarioFin" value="18:00">
+          </div>
+        </div>
+        <!-- Botón de guardar -->
+        <button type="submit" class="btn btn-primary mt-4">Guardar Cambios</button>
+      </div>
+    </form>
+  </div>
+</div>

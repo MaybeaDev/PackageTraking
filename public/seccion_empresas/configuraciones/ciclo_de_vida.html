@@ -1,0 +1,44 @@
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <button class="nav-link" aria-current="page" onclick="loadSection('configuraciones/general.html')">General</button>
+  </li>
+  <li class="nav-item">
+    <button class="nav-link active">Ciclo de vida</button>
+  </li>
+</ul>
+
+<h1>Ciclo de vida</h1>
+<p>Pasos del ciclo de vida y orden</p>
+
+<div class="container mb-3">
+  <button class="btn btn-primary" id="addCard">Agregar Tarjeta</button>
+</div>
+
+<div class="container" style="width: 40%; min-width: 200px;" id="sortableCards">
+  <div class="card" draggable="true">
+    <div class="card-body">
+      <label class="card-title editable" contenteditable="true" style="padding-inline: 10px;">Recibido en Bodega</label>
+      <button class="btn btn-outline-danger btn-sm" onclick="removeCard(this)">Eliminar</button>
+    </div>
+  </div>
+  <div class="card" draggable="true">
+    <div class="card-body">
+      <label class="card-title editable" contenteditable="true" style="padding-inline: 10px;">En preparacion</label>
+      <button class="btn btn-outline-danger btn-sm" onclick="removeCard(this)">Eliminar</button>
+    </div>
+  </div>
+  <div class="card" draggable="true">
+    <div class="card-body">
+      <label class="card-title editable" contenteditable="true" style="padding-inline: 10px;">En Reparto</label>
+      <button class="btn btn-outline-danger btn-sm" onclick="removeCard(this)">Eliminar</button>
+    </div>
+  </div>
+  <div class="card" draggable="true">
+    <div class="card-body">
+      <label class="card-title editable" contenteditable="true" style="padding-inline: 10px;">Entregado</label>
+      <button class="btn btn-outline-danger btn-sm" onclick="removeCard(this)">Eliminar</button>
+    </div>
+  </div>
+</div>
+
+
